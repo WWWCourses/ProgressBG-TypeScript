@@ -1,0 +1,16 @@
+p:nth-of-type(1):hover::first-line{
+	background-color: 	red;
+}
+p:nth-of-type(1):hover::first-letter{
+	background-color: 	green;
+}
+a{
+	outline: 	0;
+}
+p:nth-child(2n)>a:focus{
+		border: 5px solid green;
+		border-radius: 100%;
+}
+p:nth-child(2n+1)>a:focus{
+		border: 5px solid red;
+}

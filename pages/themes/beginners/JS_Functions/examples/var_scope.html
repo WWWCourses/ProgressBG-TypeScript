@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>var_scope</title>
+    <script type="text/javascript">
+        function sum( x, y ){
+            console.log("x=" + x, "y=" + y);
+            var tmp_sum = x + y;
+        }
+
+        function congratulation( name ){
+            alert("Welcome back, " + name + '!');
+        }
+
+        // var x = prompt("Моля въведете число"); // x = 5
+        // var x = 1;
+        // console.log( sum( x, 10) );
+
+        var name = "Maria";
+        congratulation( name );
+    </script>
+</head>
+<body>
+    <p id="header">Examples of functions definitions in JS.</p>
+</body>
+</html>

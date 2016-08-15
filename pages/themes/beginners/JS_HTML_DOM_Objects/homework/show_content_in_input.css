@@ -1,0 +1,11 @@
+.calculator input{
+    display: inline-block;
+    width: 10em;
+    height: 2em;
+}
+.calculator button{
+    display: inline-block;
+    margin-top: 2em;
+    width: 3em;
+    height: 3em;
+}

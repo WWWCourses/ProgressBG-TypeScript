@@ -1,0 +1,15 @@
+/* !NB: if only ':hover::first-line' is present - it did not work
+    Workarounds:
+    1. Add ':hover::first-letter'
+    2. Add '::first-line'
+*/
+.hover_first_line::first-line{
+    color: gray;
+}
+.hover_first_line:hover::first-line{
+    color: red;
+}
+/* .hover_first_line:hover::first-letter{
+    color: green;
+} */
+

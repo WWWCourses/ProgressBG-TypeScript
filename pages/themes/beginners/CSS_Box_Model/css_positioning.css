@@ -1,0 +1,23 @@
+.red{
+	position:relative;
+	background: red;
+	padding: 5px;
+	z-index: 200;
+}
+.blue{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 40px;
+	background: blue;
+	/* z-index: 100; */
+}
+.green{
+	position: relative;
+	background: green;
+	z-index: 100;
+}
+.test{
+	background: orange;
+}

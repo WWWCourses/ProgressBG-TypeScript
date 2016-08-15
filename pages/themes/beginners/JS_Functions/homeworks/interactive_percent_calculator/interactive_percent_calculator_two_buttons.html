@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ordered_and_Unordered_lists.html</title>
+    <link rel="stylesheet" type="text/css" href="interactive_percent_calculator_two_buttons.css">
+    <link rel="stylesheet" type="text/css" href="/home/nemsys/projects/front_end_patterns/css/homework_template_for_PDF.css">
+</head>
+<body>
+    <article class="task">
+            <section class="task_description">
+                <h1 class="title">Изчисляване на процент:</h1>
+                <p>Да се създаде интерактивен калкулатор на проценти, който след въведени от потребителя процент и число показва резултата. За целта, създайте формата, показана на фиг.1 и фиг.2, като спазите позиционирането на елементите.</p>
+                <p>За да генерирате сивия правоъгълник с надписа 'Изчисляване на процент' използвайте HTML елементите <b>fieldset</b> и <b>legend</b>.</p>
+                <p>Бутоните <b>'Изчисли'</b> и <b>'Изчисти'</b> се генерират чрез елемент <b>button</b> и се намират <i><b>в</b></i> елемента <b>form</b>!</p>.
+                Формата трябва да изпълнява следните действия:
+                <ol>
+                    <li>Възможност на потребителя да въведе стойност за процент и стойност за число, за което ще се изчислява процента</li>
+                    <li>Да гарантира, че въведените от потребителя стойности са числа</li>
+                    <li>При натискането на бутон 'Изчисли' да се изчисли резултата - може да използвате формулата:
+                        <i>резултат = (процент / 100) * число<i>  - и да се покаже във формата (виж. фиг.2)
+                    </li>
+
+
+                </ol>
+                <section class="results">
+                    <form class="calculus" action="#">
+                        <fieldset>
+                            <legend align="center">Изчисляване на процент</legend>
+                            <input type="number" id="the_percent" step="1" placeholder="Въведете процента тук" title="Въведете процента тук" />
+                            <div class="sign">%</div>
+                            <input type="number" id="the_number" step="1" placeholder="Въведете числото тук" title="Въведете числото тук" />
+                            <div id="result_set">
+                                <hr>
+                                <!-- <div class="sign">=</div> -->
+                                <div id="result_value">200</div>
+                            </div>
+                        </fieldset>
+                        <div class="buttons">
+                            <button id="calc" type="button"
+                            onclick="ipc_calc( 'the_percent', 'the_number', 'result_set', 'result_value' )">
+                            Изчисли</button>
+                            <button id="clear" type="submit"
+                            onclick="ipc_clear( 'the_percent', 'the_number', 'result_set', 'result_value' );">Изчисти</button>
+                        </div>
+                    </form>
+                </section>
+                <p class="figre_caption">Фигура 1: Екран</p>
+        </section>
+        <section class="notes">
+            <h1 class="title">Забележки: </h1>
+            <p>Лорем ипсум долор сит амет, цонсецтетур адиписицинг елит, сед до еиусмод темпор инцидидунт ут лаборе ет долоре магна алияуа. Ут еним ад миним вениам, яуис ноструд ехерцитатион улламцо лаборис ниси ут алияуип ех еа цоммодоцонсеяуат. Дуис ауте ируре долор ин репрехендерит ин волуптате велит ессециллум долоре еу фугиат нулла париатур. Ехцептеур синт оццаецат цупидатат нонпроидент, сунт ин цулпа яуи оффициа десерунт моллит аним ид ест лаборум.</p>
+        </section>
+    </article>
+    <script type="text/javascript" src="interactive_percent_calculator_two_buttons.js"></script>
+</body>
+</html>

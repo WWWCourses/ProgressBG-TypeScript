@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS_Events</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- css & themes include -->
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/lib/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/lib/reveal.js/css/theme/sky.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/obsidian.min.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '/ProgressBG-TypeScript/lib/reveal.js/css/print/pdf.css' : '/ProgressBG-TypeScript/lib/reveal.js/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/outfit/css/reveal.js.css">
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/custom_hljs.css">
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/common/themes/MatDes/text_schemes.css">
+    <base target="_blank">
+</head>
+<body>
+    <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+        <a class="home_link" href="../../../agenda/beginners.html#JS_Events_id" target="_top"><i class="fa fa-home"></i></a>
+        <div class="footer theme_switch">
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/white.css'); return false;">White</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/league.css'); return false;">League</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/sky.css'); return false;">Sky</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/beige.css'); return false;">Beige</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/simple.css'); return false;">Simple</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/serif.css'); return false;">Serif</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/night.css'); return false;">Night</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/moon.css'); return false;">Moon</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/solarized.css'); return false;">Solarized</a>
+        </div>
+        <div class="slides">
+<!--
+########################################################
+##################### SLIDES START #####################
+########################################################
+-->
+<section><h1>JavaScript Events</h1></section>
+<section data-transition="zoom">
+    <div class="copyright">
+        <div class="note">
+            <p>Created for</p>
+        </div>
+        <div class="company">
+            <a href="http://progressbg.net/kurs-po-web-design/">
+            <img style="height:80%" src="/ProgressBG-TypeScript/outfit/images/logos/ProgressBG_logo_529_127.png">
+            </a>
+        </div>
+        <div class="author">
+            <span>Iva E. Popova, 2016,</span>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+        </div>
+    </div>
+</section>
+
+<section><h2>Какво са HTML събитията?</h2>
+    <dl class="fa">
+            <dt>Действия(неща), които се случват с HTML елементите.</dt>
+            <dt>Събитията могат да се инициират от браузера - например <a href="http://www.w3schools.com/jsref/event_onload.asp">onload event</a>.</dt>
+            <dt>Събитята могат да се инициират от потребителя - например <a href="http://www.w3schools.com/jsref/event_onclick.asp">onclick event</a>.</dt>
+            <dt>Чрез JavaScript можем да изпълняваме определени действия (event handlers), когато възникне дадено събитие (event fires).</dt>
+            <a href="http://www.w3schools.com/jsref/dom_obj_event.asp">HTML DOM Events</a></p>
+    </dl>
+</section>
+
+<section><h2>Обработване на събития чрез HTML атрибути</h2>
+    <section>
+        <p class="NB fs-smaller">Този метод не се предпочита при реални системи. Но чрез него по-лесно се илюстрира спецификата на event handling-a. Това го прави идеален за обучение.</p>
+        <dl class="fa">
+            <dt>За всяко събитие има дефиниран атрибут от вида:
+            <span class="note">on<i>Event</i> = "JS Code"</span></dt>
+            <dt>Естествено, може да добавяме колкото желаем атрибути за събития, но може да имаме само по 1 от даден вид.</dt>
+        </dl>
+        <pre><code class="html">
+<p onclick="this.style.background='red';" onmouseleave="this.style.background='green';">Click on me, please!</p>
+        </code></pre>
+        <a href="http://www.w3schools.com/tags/ref_eventattributes.asp">W3Schools Event Attributes</a>
+    </section>
+</section>
+<section><h2>Обработване на събития в JavaScript</h2>
+    <section><h3>addEventListener()</h3>
+        <p class="NB fs-smaller">Това е метода, който се използва в практиката!</p>
+        <p>Можем да обработваме събития директно в javascript кода, като използваме метода addEventListener()</p>
+        <pre><code>
+<p id="clickable">Click on me, please!</p>
+<script type="text/javascript">
+    var node = document.getElementById('clickable');
+
+    node.addEventListener("click", clickEventHandler);
+
+    function clickEventHandler(){
+        this.style.background="red";
+    }
+</script>
+        </code></pre>
+        <a href="http://www.w3schools.com/jsref/met_element_addeventlistener.asp">HTML DOM addEventListener() Method</a>
+    </section>
+    <section><h3>addEventListener()</h3>
+        <p>Често в практиката се предпочита функцията, която обработва събитието (event handler) да се подаде като аргумент на метода addEventListener()</p>
+        <pre><code>
+<p id="clickable">Click on me, please!</p>
+<script type="text/javascript">
+    var node = document.getElementById('clickable');
+
+    node.addEventListener("click", function(){
+        this.style.background="red";
+    });
+</script>
+        </code></pre>
+    </section>
+    <section><h3>addEventListener()</h3>
+        <p>Чрез метода addEventListener() можем да изпълняваме различни действия при събития от един и същи тип</p>
+        <pre><code>
+<p id="clickable">Click on me, please!</p>
+<script type="text/javascript">
+    var node = document.getElementById('clickable');
+
+    node.addEventListener("click", function(){
+        console.log("Clicked first");
+    });
+
+    node.addEventListener("click", function(){
+        console.log("Clicked second");
+    });
+</script>
+        </code></pre>
+    </section>
+    <section><h3>removeEventListener()</h3>
+
+    </section>
+</section>
+
+<section data-background="/ProgressBG-TypeScript/outfit/images/for_slides/the_end_on_sand.jpg">
+    <!-- <img class="the_end" src="/ProgressBG-TypeScript/outfit/images/for_slides/the_end_on_sand.jpg"> -->
+</section>
+<!--
+########################################################
+##################### SLIDES END   #####################
+########################################################
+-->
+        </div>
+    </div>
+    <!-- external scripts -->
+    <script src="/ProgressBG-TypeScript/lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="/ProgressBG-TypeScript/lib/reveal.js/js/reveal.js"></script>
+     <!-- init reveal -->
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: 'c/t',
+            keyboard: true,
+            history: true,
+            center: true,
+            width: 1024,
+            height: 850,
+            // Bounds for smallest/largest possible scale to apply to content
+            // minScale: .5,
+            maxScale: 1,
+            // slide transition
+            transition: 'concave', // none/fade/slide/convex/concave/zoom
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+            // shift+maous click to zoom in/out element
+            zoomKey: 'ctrl',
+            // theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            // transition: Reveal.getQueryHash().transition || 'default'
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+</html>

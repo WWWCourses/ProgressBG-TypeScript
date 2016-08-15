@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kомпозитор?&nbsp; Автор стихове?&nbsp; Заглавие?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="stylesheet" type="text/css" href="guess_the_composer.css">
+    <script type="text/javascript" src="guess_the_composer.js"></script>
+</head>
+<body>
+    <div class='audio_box' title='Композитор?'>
+        <div id='who' title="Заглавие?">?</div>
+        <audio class='box' title='Стихове?' controls="controls"
+            onloadeddata="AudioPlayTimeout(this,2000);"
+            onended = "ShowText(this,'descr');"
+            onpause = "ShowText(this,'descr',2);"
+            onplaying = "HideText(this,'descr');"
+        >
+                <!-- ontimeupdate = "ShowText2(this,'descr')"; -->
+
+                <source src="guess_the_composer.ogg" type="audio/ogg">
+                <source src="guess_the_composer.mp3" type="audio/mpeg">
+                <!-- <source src="http://www.rumis.eu/.tmp/guess_the_artist.mp3" type="audio/mpeg"> -->
+                Явно има проблем,&nbsp;но мога да изпратя файла по друг начин :)
+            </audio>
+    </div>
+    <div id="descr">
+        <div id='t1'>Kомпозитор?&nbsp;&nbsp;&nbsp Автор стихове?&nbsp;&nbsp;&nbsp; Заглавие?</div>
+        <!-- <div id='t2'>(: (: (: &nbsp; :) :) :)</div> -->
+        <div id='t2'>.&nbsp;.&nbsp;.&nbsp;</div>
+        <div id='t3'>Една загадка не би могла да очаква отговор.&nbsp Нито &nbsp;-&nbsp; да се опитва да говори с недомълвени слова.&nbsp</div>
+        <div id="t4">Една загадка би могла да очаква единствено наслада&nbsp; (макар и само от играта на/със символите).&nbsp</div>
+        <div id="t5">.&nbsp;.&nbsp;.&nbsp;</div>
+        <div id="t6">За мен, насладата е пълна!</div>
+
+    </div>
+</body>
+</html>

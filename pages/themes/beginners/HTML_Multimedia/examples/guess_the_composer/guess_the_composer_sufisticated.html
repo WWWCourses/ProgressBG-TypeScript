@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kомпозитор? Автор стихове? Заглавие ?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<style>
+@font-face {
+    font-family: 'sf_burlington_scriptregular';
+    /home/nemsys/tmp/guess_the_composer/fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-demo.html
+    src: url('fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-webfont.eot');
+    src: url('fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-webfont.woff') format('woff'),
+         url('fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-webfont.ttf') format('truetype'),
+         url('fonts/web fonts/sfburlingtonscript_regular_macroman/SF_Burlington_Script-webfont.svg#sf_burlington_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    width: 100%;
+    height: 100%;
+    background-color:#222;
+    background: #222;  Old browsers */
+    font-family: 'sf_burlington_scriptregular',serif;
+    font-size: 100px;
+    border: 0px solid red; /* iep_debug...*/
+}
+div.audio_box {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 10%;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 2px solid #999;
+
+}
+div.audio_box:hover{
+
+}
+audio.box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+#who,#fake_who_1,#fake_who_2,#fake_who_3,#fake_who_4{
+    position: absolute;
+}
+#who {
+    left: 260px;
+    top:30px;
+    width: 70px;
+    height: 120px;
+    text-align: center;
+    align:center;
+    color: #999;
+}
+#who:hover{
+    color: #222;
+    background-color: #999;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #999;
+}
+span.vis_on_hover{
+    display: none;
+    text-align: center;
+    align:center;
+    color: #999;
+}
+#fake_who_1:hover span,#fake_who_2:hover span,#fake_who_3:hover span,#fake_who_4:hover span{
+   display: block;
+}
+#fake_who_1:hover ~ #who,#fake_who_2:hover ~ #who,#fake_who_3:hover ~ #who,#fake_who_4:hover ~ #who{
+   display: none;
+}
+#fake_who_1{
+    left: 0px;
+    width:110px;
+    height: 170px;
+
+}
+#fake_who_2{
+    left: 110px;
+    width:100px;
+    height: 170px;
+}
+#fake_who_3{
+    left: 370px;
+    width:110px;
+    height: 170px;
+}
+#fake_who_4{
+    left: 480px;
+    width:120px;
+    height: 170px;
+}
+.down{
+    padding-top: 60px;
+    height: 110px;
+}
+#descr{
+    position: absolute;
+    width: 600px;
+    top: 250px;
+    /*border: 1px solid green;*/
+    font-size: 12pt;
+    color: #856;
+}
+
+
+</style>
+
+
+<body>
+<div class='audio_box' title='Kопозитор?'>
+    <div id='fake_who_1' title="Заглавие?"><span class='vis_on_hover'>?</span></div>
+    <div id='fake_who_2' title="Стихове?"><span class='vis_on_hover down'>?</span></div>
+    <div id='fake_who_3' title="Заглавие?"><span class='vis_on_hover'>?</span></div>
+    <div id='fake_who_4' title="Стихове?"><span class='vis_on_hover down'>?</span></div>
+    <div id='who' title="Kомпозитор? Автор стихове? Заглавие ?">?</div>
+    <audio class='box' title='Стихове?' controls="controls"
+        onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 1500)">
+        <source src="guess_the_composer.ogg" type="audio/ogg">
+        <source src="guess_the_composer.mp3" type="audio/mpeg">
+        <!-- <source src="http://www.rumis.eu/.tmp/guess_the_artist.mp3" type="audio/mpeg"> -->
+            Your browser does not support the audio element.
+    </audio>
+    <div id="descr">
+        <span>Kомпозитор? Автор стихове? Заглавие ?</span>
+        <span id='smile'>:)</span>
+       <span>Загадката, не очаква отговор. Нито разчитане на намеци...Единствено, поднася символи.</span>
+
+
+
+    </div>
+</div>
+
+
+</body>
+</html>

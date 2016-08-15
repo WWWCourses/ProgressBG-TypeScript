@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transition on rotate</title>
+    <style type="text/css">
+        .box{
+            border: 1px solid #333;
+            padding:1em;
+        }
+        .rotated{
+            margin-top: 20em;
+            transform: rotate(90deg);
+        }
+        .rotated:hover{
+            transform: rotate(0deg);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box rotated">Проектиране</div>
+</body>
+</html>

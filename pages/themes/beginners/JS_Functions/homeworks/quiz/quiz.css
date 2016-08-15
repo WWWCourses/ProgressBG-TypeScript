@@ -1,0 +1,18 @@
+/* simple reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul, li{
+    list-style-type: none;
+}
+/* автоматично номерираме въпросите */
+.questions{
+    counter-reset: question;
+}
+.questions>li>h2:after{
+    counter-increment: question;
+    content: " " counter(question) ".";
+}
+/* Продължаваме със стилизирането на списъка - тук сте вие... */
+

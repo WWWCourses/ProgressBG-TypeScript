@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>gloabal_variable</title>
+    <script type="text/javascript" src="gloabal_variable_1.js"></script>
+    <script type="text/javascript" src="gloabal_variable_2.js"></script>
+    <script type="text/javascript">
+        function F(){
+            global_variable = "Visible outside F()";
+            var local_var = 'Local in F()';
+        }
+        F();
+        console.log( "local_var: ", lchromocal_var );
+        console.log( "global_variable: ", global_variable );
+    </script>
+    <base target="_blank">
+</head>
+<body>
+
+</body>
+</html>

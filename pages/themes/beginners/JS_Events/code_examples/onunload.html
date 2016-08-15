@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>onbeforeunload Demo</TITLE>
+<script language="JavaScript">
+  window.onbeforeunload = confirmExit;
+  function confirmExit()
+  {
+    return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+  }
+</script>
+</HEAD>
+<BODY>
+
+<h1><code>onbeforeunload</code> Demo</h1>
+This demo illustrates how to create an event handler for the client-side <code>onbeforeuload</code> event.  Notice that the
+string returned by the event handler is displayed in the dialog box the user is shown when the page is being unloaded.
+If the user clicks Cancel, they'll remain on the page; if they click OK, they'll exit the page as they specified (either jumping
+to another Web page or closing the browser).
+<p>
+Here are some links you can click to leave this page.  Note that if you are visiting with Internet Explorer or FireFox 0.9 or
+higher, you'll be asked if you really want to leave this page.  This also works when closing the browser.
+<ul>
+    <li><a href="http://scottonwriting.net/">ScottOnWriting.NET</a> (my blog)</li>
+    <li><a href="http://www.google.com/">Google</a></li>
+    <li><a href="http://www.nbaweblog.com/nba/">NBAWebLog.com</a></li>
+</ul>
+<p><hr><p>
+Here is a form to simulate a data entry page...  One "issue" you'll note here is that when the submit button is clicked
+it prompts the user, asking if they're sure they want to leave the page.  We'll see how to fix this in
+<a href="/webtech/100604-1.shtml">the article</a>...
+<form>
+  What is your name: <input type="text" name="name" /><br />
+  What is your age: <input type="text" name="age" size="3" />
+  <br />
+  <input type="Submit" value="Save" />
+</form>
+<p><hr><p>
+<b>Source Code</b><br />
+<p><table width="95%" border="0">
+<tr><td width="100%" bgcolor="#cccccc">
+<code><pre>
+&lt;script language="JavaScript"&gt;
+  window.onbeforeunload = confirmExit;
+  function confirmExit()
+  {
+    return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+  }
+&lt;/script&gt;
+</pre></code>
+</td></tr>
+</table><p><hr><p>
+<center><a href="/webtech/100604-1.shtml">Return to the article</a>...</center>
+</BODY>
+</HTML>

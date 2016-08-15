@@ -1,0 +1,96 @@
+/*~~~~~~~~~~~~ дефоулт ~~~~~~~~~~~*/
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    font-size: 18px;
+    letter-spacing: .05em;
+    color: #666;
+    border: none;
+    overflow:auto;
+}
+html{
+    /*background-color: #fff;*/
+}
+body{
+    /*width: 60%;*/
+    /*margin: 0 auto;*/
+    padding: 0em;
+    background-color: #eee;
+}
+/*~~~~~~~~~~~~ формата ~~~~~~~~~~~*/
+form.calculus{
+     width: 60%;
+     margin: 2em auto 0 auto;
+     padding: 1em;
+     /*background: #ded;*/
+}
+.calculus fieldset{
+    padding: 1em 0;
+    border: .1em solid #ccc;
+}
+.calculus fieldset *{
+            display: table;
+            margin: 1em auto;
+}
+.calculus legend{
+            padding: 0 1em;
+            margin: 0 auto;
+            font-size: .9em;
+            color: #caa;
+            font-style: italic;
+}
+.calculus input{
+            /*display: block;*/
+            -webkit-appearance: none;
+            -moz-appearance:none;
+            line-height: 2em;
+            font-size: 1em;
+            text-align: center;
+            border: .2em solid #caa;
+            border-radius: .7em;
+}
+.calculus .sign{
+            display:table;
+            margin:0 auto;
+            font-size: 2em;
+            font-weight: bold;
+            /*color: #9b9;*/
+}
+/*~~~~~~~~~~~~ бутоните ~~~~~~~~~~~*/
+.calculus .buttons{
+            text-align: center;
+            margin: 2em 0 0 0;
+            /*background: #cec;*/
+}
+.calculus button{
+            display: inline-block;
+            padding: .5em 1em;
+            border: 1px solid #bababa;
+            border-radius: .3em;
+            box-shadow: 0px 0px 1em #ccc inset;
+            background: #caa linear-gradient(to bottom, transparent 0%, rgba(250, 250, 250, 0) 0%);
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            color: #eee;
+            /*text-shadow: 1px 1px 0px #eee;*/
+}
+
+/*~~~~~~~~~~~~ резултата ~~~~~~~~~~~*/
+.calculus #result_set {
+            display: none;
+            margin-top: 2em;
+            width: 60%;
+}
+.calculus #result_set hr{
+    display: block;
+    height: 2px;
+    background: #666;
+}
+.calculus #result_value{
+            margin-bottom: 0;
+            font-size: 2em;
+}
+

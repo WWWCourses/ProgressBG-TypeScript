@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>console_methods</title>
+    <style type="text/css">
+        p:nth-of-type(1), p:nth-of-type(2){
+            display: inline-block;
+            background: red;
+        }
+    </style>
+    <script type="text/javascript">
+        function openWindow(){
+            var urls = [
+                'http://wwwcourses.github.io/ProgressBG-TypeScript/pages/readings/beginners/UsefulResources.html',
+                'https://github.com/WWWCourses/ProgressBG-TypeScript',
+                'https://github.com/WWWCourses/ProgressBG-TypeScript',
+                'https://github.com/WWWCourses/ProgressBG-TypeScript',
+
+            ];
+            var win_name     = 'PopUp';
+            var win_width    = 200;
+            var win_height   = 200;
+            var win_pos_top  = 10;
+            var win_pos_left = 10;
+
+            for( var i in urls ){
+                var scale = (i*1)+30;
+                win_name += i;
+                win_width += scale;
+                win_height += scale;
+                win_pos_top += scale;
+                win_pos_left += scale;
+                var win_params = 'width='+win_width+ ',height='+win_height+ ',top='+win_pos_top+ ',left='+win_pos_left;
+                console.log( "win_name: ", win_name);
+                console.log( "win_params: ", win_params );
+                window.open( urls[i], win_name, win_params );
+            }
+        }
+        function closeWindow(){
+            console.log("ok");
+            Window.minimize();
+        };
+        function windowRename( new_name ){
+            window.name = new_name;
+        };
+        function changeStatus( new_status ){
+            window.status = new_status;
+        }
+        function getSel(){
+            alert("test");
+            var sel = window.getSelection();
+            console.dir( sel );
+            alert( sel );
+        }
+    </script>
+</head>
+<body>
+    <p>Променете размера на прозореца!</p>
+    <button onclick="openWindow();">Click ME</button>
+</body>
+</html>

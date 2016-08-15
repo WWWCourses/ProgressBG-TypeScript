@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>changing_colors</title>
+    <script type="text/javascript" src="timed_changing_colors.js"></script>
+    <style type="text/css">
+    	button{
+    		width: 10em;
+            height: 5em;
+    	}
+        #wrapper{
+            width: 30em;
+            padding: 3em;
+            text-align: center;
+            overflow: hidden;
+            background: #EFEFFE;
+            border: .2em inset #999;
+        }
+        #rainbow{
+            float: left;
+        }
+        #stop{
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        var color_timer;
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <button id="rainbow" onclick="color_timer = startTimer( 1000, this );">Rainbow</button>
+        <button id="stop" onclick="stopTimer(color_timer)">Стоп</button>
+    </div>
+</body>
+</html>

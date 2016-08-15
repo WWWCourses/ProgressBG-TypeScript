@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>colorParagraphs</title>
+    <style type="text/css">
+        header h1, header h2{
+            text-align: center;
+        }
+        .lyrics_wraper{
+            padding: 0 1em 0 1em;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .lyrics_wraper>h2{
+            margin-left: 1em;
+        }
+        .lyrics{
+            /* width: 40vw; */
+
+        }
+        .colorChange{
+            padding: .3em .5em;
+            text-align: center;
+            border: 1px solid #999;
+            border-radius: 2em;
+            /* border-bottom: 1px solid #999; */
+        }
+        .colorChange>div{
+            margin-bottom: .5em;
+        }
+        .colorChange button{
+            width: 8em;
+        }
+        .colorChange input{
+            width: 8em;
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lyrics</h1>
+        <h2>DOM Navigation Example</h2>
+    </header>
+    <section id="floyd" class="lyrics_wraper left">
+        <div class="colorChange">
+            <p><em>Select color and press the button</em></p>
+            <div>
+                <input type="color" name="even" value="#999999">
+                <button onclick="paintParagraph(this);">Color Even</button>
+            </div>
+            <div>
+                <input type="color" name="odd" value="#F8FF8D">
+                <button onclick="paintParagraph(this);">Color Odd</button>
+            </div>
+        </div>
+        <h2>Pink Floyd</h2>
+        <article class="lyrics">
+            <h3>Hey You (2011 Remastered Version)</h3>
+            <p>Hey you out there in the cold<br>
+                Getting lonely getting old<br>
+                Can you feel me?<br>
+                Hey you standing in the aisles<br>
+                With itchy feet and fading smiles<br>
+                Can you feel me?<br>
+                Hey you don't help them to bury the light<br>
+                Don't give in without a fight</p>
+            <p>Hey you out there on your own<br>
+                Sitting naked by the phone<br>
+                Would you touch me?<br>
+                Hey you with you ear against the wall<br>
+                Waiting for someone to call out<br>
+                Would you touch me?<br>
+                Hey you, would you help me to carry the stone?<br>
+                Open your heart, I'm coming home</p>
+            <p>But it was only fantasy<br>
+                The wall was too high<br>
+                As you can see<br>
+                No matter how he tried<br>
+                He could not break free<br>
+                And the worms ate into his brain</p>
+            <p>Hey you, out there on the road<br>
+                Always doing what you're told<br>
+                Can you help me?<br>
+                Hey you, out there beyond the wall<br>
+                Breaking bottles in the hall<br>
+                Can you help me?<br>
+                Hey you, don't tell me there's no hope at all<br>
+                Together we stand, divided we fall</p>
+        </article>
+    </section>
+    <section id="the cure" class="lyrics_wraper right">
+        <div class="colorChange">
+            <p><em>Select color and press the button</em></p>
+            <div>
+                <input type="color" name="even" value="#AC72FE">
+                <button onclick="paintParagraph(this);">Color Even</button>
+            </div>
+            <div>
+                <input type="color" name="odd" value="#999999">
+                <button onclick="paintParagraph(this);">Color Odd</button>
+            </div>
+        </div>
+        <h2>The Cure</h2>
+        <article class="lyrics">
+            <h3>Charlotte Sometimes</h3>
+                <p>All the faces<br>
+                All the voices blur<br>
+                Change to one face<br>
+                Change to one voice<br>
+                Prepare yourself for bed<br>
+                The light seems bright<br>
+                And glares on white walls<br>
+                All the sounds of<br>
+                Charlotte sometimes<br>
+                Into the night with<br>
+                Charlotte sometimes</p>
+                <p>Night after night she lay alone in bed<br>
+                Her eyes so open to the dark<br>
+                The streets all looked so strange<br>
+                They seemed so far away<br>
+                But Charlotte did not cry</p>
+                <p>The people seemed so close<br>
+                Playing expressionless games<br>
+                The people seemed so close<br>
+                So many other names</p>
+                <p>Sometimes I'm dreaming<br>
+                Where all the other people dance<br>
+                Sometimes I'm dreaming<br>
+                Charlotte sometimes<br>
+                Sometimes I'm dreaming<br>
+                Expressionless the trance<br>
+                Sometimes I'm dreaming<br>
+                So many different names<br>
+                Sometimes I'm dreaming<br>
+                The sounds all stay the same<br>
+                Sometimes I'm dreaming<br>
+                She hopes to open shadowed eyes<br>
+                On a different world<br>
+                Come to me scared princess<br>
+                Charlotte sometimes</p>
+                <p>On that bleak track<br>
+                (see the sun is gone again)<br>
+                The tears were pouring down her face<br>
+                She was crying and crying for a girl<br>
+                Who died so many years before</p>
+                <p>Sometimes I dream<br>
+                Where all the other people dance<br>
+                Sometimes I dream<br>
+                Charlotte sometimes<br>
+                Sometimes I dream<br>
+                The sounds all stay the same<br>
+                Sometimes I'm dreaming<br>
+                There are so many different names<br>
+                Sometimes I dream<br>
+                Sometimes I dream</p>
+                <p>Charlotte sometimes crying for herself<br>
+                Charlotte sometimes dreams a wall around herself<br>
+                But it's always with love<br>
+                With so much love it looks like<br>
+                Everything else<br>
+                Of Charlotte sometimes<br>
+                So far away<br>
+                Glass sealed and pretty<br>
+                Charlotte sometimes</p>
+        </article>
+    </section>
+    <script type="text/javascript" src="colorParagraphs.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple_and_pure_HTML5_CSS3_JS_players.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+</head>
+<body>
+    <div class='audio_box' title='Guess the composer?'>
+        <div id='who' title="Заглавие?">?</div>
+        <audio class='box' title='Стихове?' controls="controls"
+                onloadeddata="AudioPlayTimeout(this,2000);"
+                onended = "ShowText(this,'descr');"
+                onpause = "ShowText(this,'descr',2);"
+                onplaying = "HideText(this,'descr');"
+        >
+                <!-- ontimeupdate = "ShowText2(this,'descr')"; -->
+
+                <source src="guess_the_composer.ogg" type="audio/ogg">
+                <source src="guess_the_composer.mp3" type="audio/mpeg">
+                <!-- <source src="http://www.rumis.eu/.tmp/guess_the_artist.mp3" type="audio/mpeg"> -->
+                Явно има проблем,&nbsp;но мога да изпратя файла по друг начин :)
+            </audio>
+    </div>
+    <div id="descr">
+        <div id='t1'>Kомпозитор?&nbsp;&nbsp;&nbsp Автор стихове?&nbsp;&nbsp;&nbsp; Заглавие?</div>
+        <!-- <div id='t2'>(: (: (: &nbsp; :) :) :)</div> -->
+        <div id='t2'>.&nbsp;.&nbsp;.&nbsp;</div>
+        <div id='t3'>Една загадка не би могла да очаква отговор.&nbsp Нито &nbsp;-&nbsp; да се опитва да говори с недомълвени слова.&nbsp</div>
+        <div id="t4">Една загадка би могла да очаква единствено наслада&nbsp; (макар и само от играта на/със символите).&nbsp</div>
+        <div id="t5">.&nbsp;.&nbsp;.&nbsp;</div>
+        <div id="t6">За мен, насладата е пълна!</div>
+
+    </div>
+</body>
+</html>

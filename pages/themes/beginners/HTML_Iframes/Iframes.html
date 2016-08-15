@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Iframes in HTML</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- css & themes include -->
+    <link rel="stylesheet" href="../../../../outfit/reveal.js/css/reveal.css">
+    <!-- Dark: -->
+    <!-- <link rel="stylesheet" href="../../../../outfit/reveal.js/css/theme/moon.css" id="theme"> -->
+    <!-- Light: -->
+    <link rel="stylesheet" href="../../../../outfit/reveal.js/css/theme/solarized.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <!-- <link rel="stylesheet" href="../../../../outfit/reveal.js/lib/css/zenburn.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai-sublime.min.css">
+    <!-- tomorrow-night/monokai-sublime -->
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '../../../../outfit/reveal.js/css/print/pdf.css' : '../../../../outfit/reveal.js/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- custom -->
+    <!-- <link rel="stylesheet" href="../../../../outfit/css/reveal.js.css"> -->
+    <style type="text/css">
+        a.home_link{
+            display: block;
+            z-index: 100;
+            margin: .5em;
+        }
+        .reveal section img{
+          border: 0;
+        }
+        .reveal section h2, .reveal section h3, .reveal section h4,{
+            text-transform: none;
+        }
+        .reveal img{
+
+        }
+        .inline{
+          display: inline;
+        }
+    </style>
+    <base target="_blank">
+</head>
+<body>
+    <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+        <a class="home_link" href="../../../agenda/beginners.html"><i class="fa fa-home"></i></a>
+        <div class="slides">
+<!-- ~~~~~~~~~~~~~~~~~~~~~ SLIDES START ~~~~~~~~~~~~~~~~~~~~~ -->
+<section><h2><em>iframes</em></h2>
+    <a href="http://www.w3schools.com/tags/tag_iframe.asp">HTML iframes (w3schools)</a>
+</section>
+<section><h3>Употреба</h3>
+    <p>За вмъкване на друга Уеб страница във вашата страница.</p>
+</section>
+<section><h3>Общ синтаксис</h3>
+<pre><code data-trim>
+&lt;iframe src="URL"&gt;
+    Съобщение, което ще се изпише ако браузера  на поддържа iframes
+&lt;/iframe&gt;
+</code></pre>
+</section>
+<section><h4>Вмъкване на карта от bgmaps</h4>
+<pre><code>
+&lt;iframe width="500" height="500" frameborder="0" scrolling="no"
+src="http://www.bgmaps.com/link/map/EA572A05A84E3D898D0DEFEB59D5DDE7"&gt;
+&lt;/iframe&gt;
+</code></pre>
+</section>
+<section>
+
+</section>
+<!-- ~~~~~~~~~~~~~~~~~~~~~ SLIDES End ~~~~~~~~~~~~~~~~~~~~~ -->
+        </div>
+    </div>
+    <!-- external scripts -->
+    <script src="../../../../outfit/reveal.js/lib/js/head.min.js"></script>
+    <script src="../../../../outfit/reveal.js/js/reveal.js"></script>
+    <!-- init reveal -->
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: 'c/t',
+            keyboard: true,
+            history: true,
+            center: true,
+            // slide transition
+            transition: 'concave', // none/fade/slide/convex/concave/zoom
+            // Factor of the display size that should remain empty around the content
+            margin: 0.05,
+
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: '../../../../outfit/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '../../../../outfit/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../../../../outfit/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../../../../outfit/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '../../../../outfit/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: '../../../../outfit/reveal.js/plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	/* overflow: hidden; */
+}
+.left{
+	float:left;
+	width: 50vw;
+	height: 100vh;
+	background: red;
+}
+.right{
+	float: left;
+	width: 49vw;
+	height: 100vh;
+	background: blue;
+}

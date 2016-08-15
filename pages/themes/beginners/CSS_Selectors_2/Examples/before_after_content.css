@@ -1,0 +1,10 @@
+.utf_before:before{
+    content: '\2AA2';
+    font-size: 1.2em;
+    color: red;
+}
+.utf_before:after{
+    content: '\2AA2';
+    font-size: 1.2em;
+    color: red;
+}

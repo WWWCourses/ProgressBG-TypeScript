@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Представяне на текст чрез HTML5 елементи</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- css & themes include -->
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/IT-Academy-Front-End-Dev/lib/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/beige.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <!-- <link rel="stylesheet" href="/IT-Academy-Front-End-Dev/lib/reveal.js/lib/css/zenburn.css"> -->
+=======
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/lib/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/lib/reveal.js/css/theme/sky.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <!-- <link rel="stylesheet" href="/ProgressBG-TypeScript/lib/reveal.js/lib/css/zenburn.css"> -->
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/obsidian.min.css">
+    <!--DARK:  tomorrow-night/monokai-sublime/obsidian/tomorrow-night-eighties/ -->
+    <!-- LIGHT:tomorrow/ -->
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+<<<<<<< HEAD
+        link.href = window.location.search.match( /print-pdf/gi ) ? '/IT-Academy-Front-End-Dev/lib/reveal.js/css/print/pdf.css' : '/IT-Academy-Front-End-Dev/lib/reveal.js/css/print/paper.css';
+=======
+        link.href = window.location.search.match( /print-pdf/gi ) ? '/ProgressBG-TypeScript/lib/reveal.js/css/print/pdf.css' : '/ProgressBG-TypeScript/lib/reveal.js/css/print/paper.css';
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CUSTOM -->
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/IT-Academy-Front-End-Dev/outfit/css/reveal.js.css">
+    <link rel="stylesheet" type="text/css" href="/IT-Academy-Front-End-Dev/outfit/css/custom_hljs.css">
+    <link rel="stylesheet" type="text/css" href="/IT-Academy-Front-End-Dev/outfit/css/common/themes/MatDes/text_schemes.css">
+=======
+    <link rel="stylesheet" href="/ProgressBG-TypeScript/outfit/css/reveal.js.css">
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/custom_hljs.css">
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/common/themes/MatDes/text_schemes.css">
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+    <base target="_blank">
+</head>
+<body>
+    <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+        <a class="home_link" href="../../../agenda/beginners.html#cliche_id" target="_top"><i class="fa fa-home"></i></a>
+        <div class="footer theme_switch">
+<<<<<<< HEAD
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/white.css'); return false;">White</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/league.css'); return false;">League</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/beige.css'); return false;">Sky</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/beige.css'); return false;">Beige</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/simple.css'); return false;">Simple</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/serif.css'); return false;">Serif</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/night.css'); return false;">Night</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/moon.css'); return false;">Moon</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/IT-Academy-Front-End-Dev/lib/reveal.js/css/theme/solarized.css'); return false;">Solarized</a>
+=======
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/white.css'); return false;">White</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/league.css'); return false;">League</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/sky.css'); return false;">Sky</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/beige.css'); return false;">Beige</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/simple.css'); return false;">Simple</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/serif.css'); return false;">Serif</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/night.css'); return false;">Night</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/moon.css'); return false;">Moon</a>
+            <a href="#" onclick="document.getElementById('theme').setAttribute('href','/ProgressBG-TypeScript/lib/reveal.js/css/theme/solarized.css'); return false;">Solarized</a>
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+        </div>
+        <div class="slides">
+<!--
+########################################################
+##################### SLIDES START #####################
+########################################################
+-->
+<section><h1>Представяне на текст чрез HTML5 елементи</h1></section>
+<section data-transition="zoom">
+    <div class="copyright">
+        <div class="note">
+            <p>Created for</p>
+        </div>
+        <div class="company">
+<<<<<<< HEAD
+            <a href="http://www.it-academy.bg/kurs-html-css-front-end-development/">
+            <img style="height:4em" src="/IT-Academy-Front-End-Dev/outfit/images/logos/it-academy_240x55.gif">
+=======
+            <a href="http://progressbg.net/kurs-po-web-design/">
+            <img style="height:80%" src="/ProgressBG-TypeScript/outfit/images/logos/ProgressBG_logo_529_127.png">
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+            </a>
+        </div>
+        <div class="author">
+            <span>Iva E. Popova, 2016,</span>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+        </div>
+    </div>
+</section>
+
+<section><h2>Параграфи и заглавия</h2>
+    <section>
+        <p>Елемент p</p>
+        <pre><code>
+            <p>Текст в параграф 1</p>
+            <p>Текст в параграф 2</p>
+        </code></pre>
+        <div class="results_h">
+            <p>Текст в параграф 1</p>
+            <p>Текст в параграф 2</p>
+        </div>
+    </section>
+    <section>
+        <p>Елементи h1 - h6</p>
+        <pre><code>
+            <h1>Заглавие 1</h1>
+            <h2>Заглавие 2</h2>
+            <h3>Заглавие 3</h3>
+            <h4>Заглавие 4</h4>
+            <h5>Заглавие 5</h5>
+            <h6>Заглавие 6</h6>
+        </code></pre>
+        <div class="results_h">
+            <h1>Заглавие 1</h1>
+            <h2>Заглавие 2</h2>
+            <h3>Заглавие 3</h3>
+            <h4>Заглавие 4</h4>
+            <h5>Заглавие 5</h5>
+            <h6>Заглавие 6</h6>
+        </div>
+    </section>
+
+</section>
+<section><h2>Елементи за акцентиране на текст</h2>
+    <section>
+        <pre><code>
+<!-- почернен текст: -->
+&lt;b&gt;bold text&lt;/b&gt;
+&lt;strong&gt;important text&lt;/strong&gt; <!-- SEO ! -->
+<br>
+<!-- текст в курсив: -->
+&lt;i&gt;italic text&lt;/i&gt;
+&lt;em&gt;emphasized text&lt;/em&gt; <!-- SEO ! -->
+        </code></pre>
+        <div class="results_h">
+            <!-- почернен текст: -->
+            <b>bold text</b>
+            <strong>important text</strong> <!-- SEO ! -->
+            <br>
+            <!-- текст в курсив: -->
+            <i>italic text</i>
+            <em>emphasized text</em> <!-- SEO ! -->
+        </div>
+    </section>
+</section>
+<section><h2>Елементи за форматиране на текст.</h2>
+    <section>
+        <p>small and mark</p>
+        <pre><code>&lt;small&gt;Small text&lt;/small&gt;</code></pre>
+        <pre><code>&lt;mark&gt;Marked text&lt;/mark&gt;</code></pre>
+        <div class="results_h">
+             <small>Small text</small>
+             <mark>Marked text</mark>
+        </div>
+    </section>
+    <section>
+        <p>Deleted and inserted</p>
+        <pre><code>
+&lt;del&gt;deleted text&lt;/del&gt;
+&lt;ins&gt;inserted text&lt;/ins&gt;
+        </code></pre>
+        <div class="results_h">
+             <del>Deleted text</del>
+             <ins>inserted text</ins>
+        </div>
+    </section>
+    <section>
+        <p>Super and Sub script</p>
+        <pre><code>
+&lt;sub&gt;subscripted text&lt;/sub&gt;
+&lt;sup&gt;superscripted text&lt;/sup&gt;
+        </code></pre>
+        <div class="result_h">
+            <span>normal text</span>
+            <sub>subscripted text</sub>
+            <sup>superscripted text</sup>
+        </div>
+    </section>
+    <section>
+        <p>Други</p>
+        <pre><code>
+&lt;code&gt;A piece of computer code&lt;/code&gt;
+&lt;samp&gt;Sample output from a computer program&lt;/samp&gt;
+&lt;kbd&gt;Keyboard input&lt;/kbd&gt;
+&lt;var&gt;Variable&lt;/var&gt;
+        </code></pre>
+        <div class="result_h">
+            <code>A piece of computer code</code><br>
+            <samp>Sample output from a computer program</samp><br>
+            <kbd>Keyboard input</kbd><br>
+            <var>Variable</var><br>
+        </div>
+    </section>
+</section>
+
+<<<<<<< HEAD
+<section data-background="/IT-Academy-Front-End-Dev/outfit/images/for_slides/the_end_on_sand.jpg">
+    <!-- <img class="the_end" src="/IT-Academy-Front-End-Dev/outfit/images/for_slides/the_end_on_sand.jpg"> -->
+=======
+<section data-background="/ProgressBG-TypeScript/outfit/images/for_slides/the_end_on_sand.jpg">
+    <!-- <img class="the_end" src="/ProgressBG-TypeScript/outfit/images/for_slides/the_end_on_sand.jpg"> -->
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+</section>
+<!--
+########################################################
+##################### SLIDES END   #####################
+########################################################
+-->
+        </div>
+    </div>
+    <!-- external scripts -->
+<<<<<<< HEAD
+    <script src="/IT-Academy-Front-End-Dev/lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="/IT-Academy-Front-End-Dev/lib/reveal.js/js/reveal.js"></script>
+=======
+    <script src="/ProgressBG-TypeScript/lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="/ProgressBG-TypeScript/lib/reveal.js/js/reveal.js"></script>
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+     <!-- init reveal -->
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: 'c/t',
+            keyboard: true,
+            history: true,
+            center: true,
+            width: 1024,
+            height: 850,
+            // Bounds for smallest/largest possible scale to apply to content
+            // minScale: .5,
+            maxScale: 1,
+            // slide transition
+            transition: 'concave', // none/fade/slide/convex/concave/zoom
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+            // shift+maous click to zoom in/out element
+            zoomKey: 'ctrl',
+            // theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            // transition: Reveal.getQueryHash().transition || 'default'
+            // Optional reveal.js plugins
+            dependencies: [
+<<<<<<< HEAD
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: '/IT-Academy-Front-End-Dev/lib/reveal.js/plugin/notes/notes.js', async: true }
+=======
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: '/ProgressBG-TypeScript/lib/reveal.js/plugin/notes/notes.js', async: true }
+>>>>>>> 0ed2d5a4568649d8779e00293e6eb85bf04aada8
+            ]
+        });
+    </script>
+</body>
+</html>

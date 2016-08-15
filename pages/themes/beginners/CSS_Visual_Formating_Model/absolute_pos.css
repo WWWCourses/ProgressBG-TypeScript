@@ -1,0 +1,30 @@
+html{
+   border: 40px solid #000;
+}
+body{
+    border: 40px solid #555;
+    margin: 0;
+}
+p{
+    margin: 0
+}
+.box1{
+    /* width: 100px; */
+    height: 100px;
+    background: red;
+    border: 40px solid darkred;
+}
+.test{
+    position: relative;
+    top: 20px;
+    border: 40px solid #999;
+}
+.box2{
+    position: absolute;
+    /* top: 0; */
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border: 40px solid darkblue;
+}

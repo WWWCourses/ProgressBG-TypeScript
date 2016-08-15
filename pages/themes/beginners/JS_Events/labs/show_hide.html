@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show/Hide</title>
+	<style type="text/css" media="screen">
+		.invisible{
+			display: none;
+		}
+		.visible{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<p id="par" class="invisible">paragraph</p>
+	<button>Show</button>
+
+	<script type="text/javascript">
+		function ShowHide(){
+			var p_class = p_node.className;
+			console.log("p_class=", p_class);
+
+			if( p_class == 'invisible'){
+				p_node.className = 'visible';
+			}else{
+				p_node.className = 'invisible';
+			}
+		}
+		
+		var btn = document.getElementsByTagName('button')[0];
+		btn.addEventListener("onclick", ShowHide, true );	
+
+		var p_node = document.getElementById('par');
+		console.log("p_node=", p_node);
+		
+		
+	</script>
+</body>
+</html>
