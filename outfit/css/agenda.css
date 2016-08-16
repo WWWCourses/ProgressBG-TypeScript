@@ -209,6 +209,7 @@
 
         .iep_literature ol li{
             line-height: 2em;
+            margin-left: 2em;
         }
         .iep_literature .book_name{
             font-style: italic;
