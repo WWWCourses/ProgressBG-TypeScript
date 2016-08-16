@@ -1,3 +1,6 @@
+var hourSuffix = 'h.';
+var minuteSuffix = 'min.';
+
 window.onload = function(){
     init();
 }
@@ -7,7 +10,7 @@ function init(){
     calcHours();
     calcTotalHours();
     calcTotalDays();
-    hideAllNodes( sub_themes_nodes );
+    // hideAllNodes( sub_themes_nodes );
 }
 function attachEvents(){
     // get elements to attach events to
@@ -37,6 +40,7 @@ function calcHours(){
         // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~hours:", hours);
         // write in hours
         hourNode.innerHTML = hours/60;
+        // hourNode.innerHTML = hours;
     };
 }
 function calcTotalHours(){
@@ -47,7 +51,14 @@ function calcTotalHours(){
         var theme_hours = parseInt(hours_nodes[i].innerHTML || 0); // cause of NaN
         total += theme_hours;
     };
+    // var humanHours = hoursForHumans(total);
+    // out_node.innerHTML = humanHours[0] +' '+ hourSuffix +' '+ humanHours[1] +' '+ minuteSuffix;
     out_node.innerHTML = total;
+}
+function hoursForHumans(realHours){
+    var hours = ~~(realHours / 60);
+    var minutes = realHours % 60;
+    return  [hours, minutes];
 }
 function calcTotalDays(){
     var hours_nodes = document.getElementsByClassName("hours");

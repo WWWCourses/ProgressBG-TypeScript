@@ -2,16 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Agenda - Fundamentals [Front-end Dev Course]</title>
+    <title>TypeScript Course</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Sublime Text3, SASS">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- CUSTOM PAGE STYLES -->
-    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/master.css">
-    <link rel="stylesheet" type="text/css" href="/ProgressBG-TypeScript/outfit/css/agenda.css">
+    <link rel="stylesheet" type="text/css" media="screen"  href="/ProgressBG-TypeScript/outfit/css/master.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/ProgressBG-TypeScript/outfit/css/agenda.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/ProgressBG-TypeScript/outfit/css/print_agenda.css">
     <style type="text/css">
         .iep_syllabus_themes .hours::after{
-            content: ' ч.';
+            content: ' h.';
+        }
+        .total_hours_value::after{
+            content: ' h.';
         }
     </style>
     <base target="_blank">
@@ -19,16 +23,27 @@
 <body class="background_gradient_left_right">
 <header>
     <h2>TypeScript</h2>
-    <h3><a href="/ProgressBG-TypeScript/index.html">Skill Leverage Program</a></h3>
-    <h4>Fundamentals</h4>
+    <h3>Fundamentals</h3>
+    <h4>Skill Leverage Program</h4>
 </header>
 <article class="iep_course_about">
+    <section>
+        <h2 class="iep_syllabus_title">За курса:</h2>
+        <p>Настоящият курс обхваща всички аспекти на езика TypeScript, акцентирайки основно върху производителността и качеството на кода, които могат да се постигнат чрез детайлното познаване на езика.</p>
+        <p>Следват се официалните материали, свързани с последната версия на езика (1.8) и актуални примери от практиката.</p>
+        <p>Материалът е представен стегнато, но богато илюстриран с практически примери и синтезирани добри практики за приложение. Всяка тема се съпътства и от допълнителни online ресурси със свободен достъп, чрез които  курсистите могат да подпомогнат процеса на обучението си. След края на всяка тема курсистите имат възможност да осмислят и затвърдят наученото чрез решаване на реална практическа задача.</p>
+        <p>Курсът завършва с разработка на SPA приложение: "Your Personal Sommelier" (система за препоръка на вина и ястия), която ще бъде изцяло изградена, като се използват усвоените знания. За да бъде в крак с последните Front-End и local-storage тенденции, в приложението се използват и: Angular2, Ionic 2 и PouchDB.</p>
+    </section>
+    <section>
+        <h3>За кого е предназначен курса</h3>
+        <p>Курса е предназначен за програмисти, които владеят отлично JavaScript (ES5) и имат желание да усвоят задълбочено TypeScript, с цел да ускорят разработката на SPA, да използват новите ES6 концепции и да създават скалируеми и удобни за поддръжка структурирани JavaScript приложения.</p>
+    </section>
 </article>
-<article class="iep_syllabus">
-    <h4 class="iep_syllabus_title">Agenda:
+<article class="page_break iep_syllabus" >
+    <h2 class="iep_syllabus_title">Програма:
     <span class="show_hide_buttons">( <span class="btn_show" onclick="showAllNodes( document.getElementsByClassName('iep_syllabus_sub_themes'))">Show Details</span>
     <span class="btn_hide"  onclick="hideAllNodes( document.getElementsByClassName('iep_syllabus_sub_themes'))">Hide Details</span> )</span>
-    </h4>
+    </h2>
     <ol class="iep_syllabus_themes">
         <li id="TypeScriptOverview">
             <h3>
@@ -36,91 +51,121 @@
                 <span class="hours">0</span>
             </h3>
             <ol class="iep_syllabus_sub_themes start">
-                <li>Course intro and overview<span class="minutes">30</span></li>
+                <li>Course intro and resources overview.<span class="minutes">30</span></li>
+                <li>Design principles behind TypeScript.<span class="minutes">20</span></li>
                 <li>What is TypeScript?<span class="minutes">30</span></li>
-                <li>EcmaScript Support<span class="minutes">20</span></li>
-                <li>Key TypeScript Features<span class="minutes">40</span></li>
-                <li>TypeScript vs. Other JavaScript Superset languages<span class="minutes">20</span></li>
-                <li>TypeScript in node.js and Angular2<span class="minutes">10</span></li>
+                <li>EcmaScript Support.<span class="minutes">20</span></li>
+                <li>Key TypeScript Features.<span class="minutes">50</span></li>
+                <li>TypeScript vs. Other JavaScript Superset languages.<span class="minutes">20</span></li>
+                <li>TypeScript in node.js.<span class="minutes">20</span></li>
+                <li>Transpiler -  the TypeScript Compiler.<span class="minutes">20</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">30</span></li>
+            </ol>
+        </li>
+        <li id="ES6">
+            <h3>
+                <span class="label arrow_down">Taste the new concepts in ES6 adn TypeScript</span>
+                <span class="hours">0</span>
+            </h3>
+            <ol class="iep_syllabus_sub_themes start">
+                <li>Template strings.<span class="minutes">5</span></li>
+                <li>Classes (detailed further)<span class="minutes">15</span></li>
+                <li>Arrow functions (detailed further)<span class="minutes">15</span></li>
+                <li>“for…of” operator.<span class="minutes">20</span></li>
+                <li>Let (detailed further)<span class="minutes">5</span></li>
+                <li>Const.<span class="minutes">15</span></li>
+                <li>Enhanced object literals.<span class="minutes">25</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="GettingStarted"><h3><span class="label arrow_down">Getting Started</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Quick Installation<span class="minutes">15</span></li>
-                <li>TypeScript IDEs integration (Atom/SublimeText3/VisualStudio/)<span class="minutes">25</span></li>
-                <li>From JavaScript to TypeScript<span class="minutes">30</span></li>
+                <li>Quick Installation.<span class="minutes">15</span></li>
+                <li>TypeScript IDEs integration (Atom/SublimeText3/VisualStudio/)<span class="minutes">40</span></li>
+                <li>From JavaScript to TypeScript.<span class="minutes">30</span></li>
                 <li>TypeScript program structure and hierarchy.<span class="minutes">20</span></li>
                 <li>A Typed "Hello World" example of types and classes.<span class="minutes">30</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>Practical Exercises.<span class="minutes">25</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="TypeSystemIntro"><h3><span class="label arrow_down">Introduction to TypeScript Type System</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>The Structural Typing of TypeScript<span class="minutes">40</span></li>
-                <li>Type Annotations<span class="minutes">30</span></li>
-                <li>Type Inferences and duck-typing<span class="minutes">30</span></li>
-                <li>Type Assertions (Casting)<span class="minutes">40</span></li>
-                <li>The Any type<span class="minutes">10</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>The Structural Typing of TypeScript.<span class="minutes">30</span></li>
+                <li>Type Annotations.<span class="minutes">20</span></li>
+                <li>Type Inferences and duck-typing.<span class="minutes">30</span></li>
+                <li>Type Assertions (Casting)<span class="minutes">30</span></li>
+                <li>The Any type.<span class="minutes">10</span></li>
+                <li>Practical Exercises.<span class="minutes">40</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="PrimitiveTypes"><h3><span class="label arrow_down">The primitive types</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Booleen, Number, String, Symbol<span class="minutes">30</span></li>
-                <li>Void, Null and Undefined<span class="minutes">20</span></li>
-                <li>User defined enum types<span class="minutes">10</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>Booleen, Number, String, Symbol.<span class="minutes">30</span></li>
+                <li>Void, Null and Undefined.<span class="minutes">20</span></li>
+                <li>User defined enum types.<span class="minutes">20</span></li>
+                <li>Practical Exercises.<span class="minutes">40</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">10</span></li>
             </ol>
         </li>
         <li id="ObjectTypes"><h3><span class="label arrow_down">The object types</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Array Types<span class="minutes">30</span></li>
-                <li>Members<span class="minutes">40</span></li>
-                <li>User defined enum types<span class="minutes">20</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>Array Types.<span class="minutes">40</span></li>
+                <li>Members.<span class="minutes">40</span></li>
+                <li>User defined enum types.<span class="minutes">20</span></li>
+                <li>Object literals.<span class="minutes">20</span></li>
+                <li>Practical Exercises.<span class="minutes">40</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="Functions"><h3><span class="label arrow_down">Functions</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>The three types of functions.<span class="minutes">30</span></li>
+                <li>The three types of functions.<span class="minutes">20</span></li>
                 <li>The optional, default and rest parameters.<span class="minutes">30</span></li>
-                <li>Type Parameters<span class="minutes">20</span></li>
-                <li>The arguments variable<span class="minutes">10</span></li>
+                <li>Type Parameters.<span class="minutes">20</span></li>
+                <li>The arguments variable.<span class="minutes">10</span></li>
                 <li>Callbacks and function signatures.<span class="minutes">30</span></li>
-                <li>Function Overloads<span class="minutes">30</span></li>
-                <li>The Return type.<span class="minutes">30</span></li>
+                <li>Function Overloads.<span class="minutes">30</span></li>
+                <li>The Return type.<span class="minutes">20</span></li>
                 <li>More on "arrow" functions.<span class="minutes">10</span></li>
-                <li>Practical Exercises<span class="minutes">50</span></li>
+                <li>Practical Exercises.<span class="minutes">40</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">30</span></li>
             </ol>
         </li>
         <li id="Scope"><h3><span class="label arrow_down">Scope</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>The JavaScript scope pitfall.<span class="minutes">20</span></li>
                 <li>"Let" precise the scope.<span class="minutes">10</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>Practical Exercises.<span class="minutes">20</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">10</span></li>
             </ol>
         </li>
         <li id="Classes"><h3><span class="label arrow_down">Classes</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Class Declarations<span class="minutes">20</span></li>
-                <li>Properties and Fields<span class="minutes">30</span></li>
+                <li>Class Declarations.<span class="minutes">20</span></li>
+                <li>Properties and Fields.<span class="minutes">30</span></li>
                 <li>Methods (Arrow Functions and Constructors)<span class="minutes">20</span></li>
-                <li>Events<span class="minutes">20</span></li>
-                <li>Access Modifiers<span class="minutes">10</span></li>
-                <li>Static Classes and Members<span class="minutes">20</span></li>
-                <li>Object Literals and Anonymous Types<span class="minutes">20</span></li>
-                <li>Class Inheritance<span class="minutes">30</span></li>
-                <li>Super Calls<span class="minutes">10</span></li>
-                <li>Practical Exercises<span class="minutes">30</span></li>
+                <li>Events.<span class="minutes">20</span></li>
+                <li>Access Modifiers.<span class="minutes">10</span></li>
+                <li>Static Classes and Members.<span class="minutes">20</span></li>
+                <li>Object Literals and Anonymous Types.<span class="minutes">20</span></li>
+                <li>Class Inheritance.<span class="minutes">30</span></li>
+                <li>Super Calls.<span class="minutes">10</span></li>
+                <li>Practical Exercises.<span class="minutes">30</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">30</span></li>
             </ol>
         </li>
         <li id="Interfaces"><h3><span class="label arrow_down">Interfaces</span><span class="hours"></span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Interfaces - introduction and declarations<span class="minutes">40</span></li>
-                <li>Applying Interfaces as Function Types<span class="minutes">30</span></li>
-                <li>Implementing interfaces with Class Types<span class="minutes">40</span></li>
-                <li>Interface Inheritance.<span class="minutes">30</span></li>
-                <li>Practical Exercises<span class="minutes">40</span></li>
+                <li>Interfaces - introduction and declarations.<span class="minutes">40</span></li>
+                <li>Interfaces as Named Object Types.<span class="minutes">20</span></li>
+                <li>Applying Interfaces as Function Types.<span class="minutes">30</span></li>
+                <li>Declaration Merging.<span class="minutes">10</span></li>
+                <li>Implementing interfaces with Class Types.<span class="minutes">40</span></li>
+                <li>Interface Inheritance - extending Classes.<span class="minutes">30</span></li>
+                <li>Practical Exercises.<span class="minutes">40</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">30</span></li>
             </ol>
         </li>
         <li id="Generics"><h3><span class="label arrow_down">Generics</span><span class="hours"></span></h3>
@@ -129,67 +174,98 @@
                 <li>A generic implementation of a class.<span class="minutes">20</span></li>
                 <li>The "T" Type and its constraints.<span class="minutes">20</span></li>
                 <li>Generic interfaces.<span class="minutes">30</span></li>
-                <li>Class Types in Generics<span class="minutes">30</span></li>
-                <li>Practical Exercises<span class="minutes">20</span></li>
+                <li>Class Types in Generics.<span class="minutes">30</span></li>
+                <li>Practical Exercises.<span class="minutes">30</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="DesignPatterns"><h3><span class="label arrow_down">Design Patterns in TypeScript</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
-                <li>Using TypeScript in large business projects<span class="minutes">30</span></li>
-                <li>A practical example with the Singleton Pattern.<span class="minutes">20</span></li>
-                <li>Implementing the Prototype Pattern<span class="minutes">30</span></li>
-                <li>Solve a real-world categorisation problem with Factory Design Pattern<span class="minutes">40</span></li>
+                <li>Boost speed and quality with DesignPatterns.<span class="minutes">20</span></li>
+                <li>Using TypeScript in large business projects.<span class="minutes">30</span></li>
+                <li>A practical example with the Singleton Pattern.<span class="minutes">30</span></li>
+                <li>Implementing the Prototype Pattern.<span class="minutes">40</span></li>
+                <li>Solve a real-world categorisation problem with Factory Design Pattern.<span class="minutes">40</span></li>
+                <li>The State Design Pattern</li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="Modules"><h3><span class="label arrow_down">Packages and Modules</span><span class="hours">0</span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>The "separation of concerns" strategy.<span class="minutes">20</span></li>
-                <li>Exporting a module<span class="minutes">20</span></li>
-                <li>Importing a module<span class="minutes">20</span></li>
-                <li>Namespaces and Modules<span class="minutes">30</span></li>
+                <li>Exporting a module.<span class="minutes">20</span></li>
+                <li>Importing a module.<span class="minutes">20</span></li>
+                <li>Namespaces and Modules.<span class="minutes">30</span></li>
                 <li>CommonJS modules approach.<span class="minutes">20</span></li>
-                <li>TypeScript AMD and RequireJS<span class="minutes">20</span></li>
-                <li>Practice<span class="minutes">20</span></li>
+                <li>TypeScript AMD and RequireJS.<span class="minutes">20</span></li>
+                <li>Practical Exercises.<span class="minutes">30</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">20</span></li>
             </ol>
         </li>
         <li id="DeclarationFiles"><h3><span class="label arrow_down">Declaration Files</span><span class="hours"></span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>Shaping the external libraries functionality.<span class="minutes">30</span></li>
+                <li>Get familiar with Declaration Files syntax.<span class="minutes">20</span></li>
                 <li>Best practices for writing clear declaration files.<span class="minutes">30</span></li>
-                <li>Practice<span class="minutes">30</span></li>
+                <li>Practical Exercises.<span class="minutes">30</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">10</span></li>
             </ol>
         </li>
-        <li id="TestDriven"><h3><span class="label arrow_down">The Test-Driven mindset</span><span class="hours"></span></h3>
+        <li id="Transpiler"><h3><span class="label arrow_down">Working with TypeScript Transpiler</span><span class="hours"></span></h3>
+            <ol class="iep_syllabus_sub_themes">
+                <li>Transpiler - the TypeScript Compiler.<span class="minutes">30</span></li>
+                <li>Transpiling Code from Typescript to Javascript<span class="minutes">15</span></li>
+                <li>A quick look on Transpiler options Cheet Sheet.<span class="minutes">15</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">0</span></li>
+            </ol>
+        </li>
+        <li id="TestDriven"><h3><span class="label arrow_down">Test-Driven Development</span><span class="hours"></span></h3>
             <ol class="iep_syllabus_sub_themes">
                 <li>The benefits.<span class="minutes">30</span></li>
                 <li>Unit testing frameworks.<span class="minutes">20</span></li>
                 <li>Testing with tsUnit.<span class="minutes">30</span></li>
-                <li>Practice<span class="minutes">40</span></li>
+                <li>Practical Exercises.<span class="minutes">30</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">10</span></li>
+            </ol>
+        </li>
+        <li id="Project"><h3><span class="label arrow_down">Let's "harness all the horses"</span><span class="hours"></span></h3>
+            <ol class="iep_syllabus_sub_themes">
+                <li>Build wine recommendation SPA from the ground with TypeScript, Angular2 and Ionic2 - project intro.<span class="minutes">20</span></li>
+                <li>Define the data model and structure.<span class="minutes">30</span></li>
+                <li>Brief intro to Angular2 Components and Services.<span class="minutes">30</span></li>
+                <li>Angular2 - installation and configuration.<span class="minutes">20</span></li>
+                <li>Define the UI Components tree.<span class="minutes">20</span></li>
+                <li>Hello Ionic 2.<span class="minutes">30</span></li>
+                <li>Build the project directory structure.<span class="minutes">20</span></li>
+                <li>PouchDB - The Database that Syncs. Installation and Configuration.<span class="minutes">10</span></li>
+                <li>Build the Consumer service.<span class="minutes">50</span></li>
+                <li>Create the Page Template.<span class="minutes">50</span></li>
+                <li>Test the app.<span class="minutes">50</span></li>
+                <li class="refreshment">(breaks included)<span class="minutes">30</span></li>
             </ol>
         </li>
     </ol>
-    <div>
-        <a href="../readings/beginners/UsefulResources.html" title="Свободни ресурси"><i class="fa fa-link"></i></a>
+    <section>
+        <!-- <a href="../readings/beginners/UsefulResources.html" title="Свободни ресурси"><i class="fa fa-link"></i></a> -->
         <h4 class="total_hours">Общо часове: <span class="total_hours_value">0</span></h4>
-    </div>
-</article>
-<!-- <article id="iep_course_project">
-    <h4>Курсов проект</h4>
-    <p class="TODO">По време на обучението, курсистите ще имат възможността да разработят самостоятелно цялостния дизайн и front-end на Уеб сайт (по зададена или избрана от тях тематика) като курсов проект. Акцентът отново ще бъде поставен върху качествения код, съобразен с актуалните стандарти( HTML5/CSS3/JavaScript (ES5, ES6) ), съвместимостта (cross browser compatibility) и добрите SEO практики.</p>
-</article>
-<article id="ip_course_about">
-    <section><h4>За кого е предназначен курса:</h4>
     </section>
-    <section><h4>Какво ще научите в курса</h4>
-    </section>
-</article> -->
+</article>
+<article class="iep_literature">
+    <h2>Използвани материали</h2>
+    <p>Курса е базиран върху:</p>
+    <ol>
+        <li><a href="https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md" class="book_name">TypeScript Language Specification,<span class="published"> Version 1.8. January, 2016</span>.</a></li>
+        <li><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" class="book_name">TypeScript Handbook,<span class="published"> Version 1.8. January, 2016</span>.</a></li>
+        <li><span class="book_name">Mastering TypeScript</span><span class="book_author"> by  Nathan Rozentals.</span><span class="published"> 2015, Packt</span></li>
+        <li><span class="book_name">Pro TypeScript: Application-Scale JavaScript Development</span><span class="book_author"> by  Steve Fenton.</span><span class="published"> 2014, Apress</span></li>
+    </ol>
+</article>
 <footer><div class="license left">
         <p><span>Iva E. Popova.</span>, 2016.
         <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></p>
         </div>
-        <div class="right">Created for <a href="http://progressbg.net/kurs-po-web-design/">ProgressBG WebDesign Course</a></div>
+        <div class="right">Created for <a href="http://progressbg.net/">ProgressBG TypeScript Course</a></div>
 </footer>
 <script type="text/javascript" src="/ProgressBG-TypeScript/outfit/js/agenda.js"></script>
-<!-- <script type="text/javascript">init();</script> -->
 </body>
 </html>
