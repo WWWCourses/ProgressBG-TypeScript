@@ -98,12 +98,14 @@
         .iep_syllabus_themes>li>h3{
             display: inline-block;
             width: 100%;
+            margin: 1em 0 .3em 0;
             font-size: 1.1em;
             font-weight: bold;
             color: #555555;
             line-height: 1.5em;
             letter-spacing: .1em;
             border-bottom: .1em solid #EADAAD;
+            page-break-after: avoid;
         }
         .iep_syllabus_themes>li>h3:hover{
             cursor: pointer;
@@ -213,6 +215,12 @@
         }
         .note{
             font-style: italic;
+        }
+        .page-break-after{
+           page-break-after:  always;
+        }
+        .page-break-before{
+            page-break-before: always;
         }
 
 /* ~~~~header ~~~~~ */
