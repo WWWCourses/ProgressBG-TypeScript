@@ -200,12 +200,19 @@
             font-style: normal;
             /* font-weight: bold; */
         }
+        .iep_aboutme p{
+            margin-left: 1em;
+            /* text-indent: 1em; */
+        }
 
         /*~~~~~~~~~~ accents  ~~~~~~~~~~*/
-        .iep_syllabus_sub_themes .kw{
-                    font-size: 1em;
-                    font-style: normal;
-                    color: #333;
+        .kw{
+            font-size: 1em;
+            font-style: normal;
+            color: #333;
+        }
+        .note{
+            font-style: italic;
         }
 
 /* ~~~~header ~~~~~ */
