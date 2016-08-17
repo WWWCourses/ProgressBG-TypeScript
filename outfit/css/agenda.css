@@ -34,7 +34,7 @@
         article>h2, article>section>h2{
             font-size: 1.8em;
             line-height: 1.5em;
-            /*font-style: italic;*/
+            font-style: italic;
             color: #888;
             margin: 1.5em .2em .3em 0;
         }
@@ -65,9 +65,16 @@
             /*font-size:.9em;*/
             cursor: pointer;
         }
-        .iep_syllabus .total_hours{
+        .iep_syllabus .total_hours p{
+            /* margin-top: -0.5em; */
             float: right;
             color: #BA7274 ;
+        }
+        .iep_syllabus .total_hours::after{
+            display: block;
+            content: "";
+            clear: both;
+            /* margin-bottom: 2em; */
         }
         .iep_course_project{
                     margin: 1em 0 0 0;
