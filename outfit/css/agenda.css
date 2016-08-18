@@ -1,7 +1,4 @@
-        /*fonts*/
-        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic);
-        @import url(https://fonts.googleapis.com/css?family=Glass+Antiqua);
-        @import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+        /*fonts - defined in master.css*/
         html{
             /*background-color: #cdcdcd;*/
         }
@@ -98,7 +95,9 @@
         a:hover{
             text-decoration: none;
             background-color: #239DD5;
-            color: inherit;
+            color: #CFDEE9;
+            border-top-right-radius: 10%;
+            border-top-left-radius: 10%;
         }
         a.active{
             color: inherit;
